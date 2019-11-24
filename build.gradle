@@ -24,3 +24,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testImplementation 'io.kotlintest:kotlintest-runner-junit5:3.4.0'
 }
+compileKotlin {
+    kotlinOptions {
+        freeCompilerArgs = ["-Xinline-classes"]
+    }
+}
